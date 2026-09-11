@@ -196,17 +196,36 @@
         }
 
         .project {
-            min-height: 280px;
-            border-radius: 18px;
-            background: linear-gradient(135deg, #1d1229, #0f0917);
-            border: 1px solid #29202f;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #777;
-            font-size: 20px;
-            transition: 0.3s;
-        }
+    overflow: hidden;
+    border-radius: 18px;
+    background: #120d1b;
+    border: 1px solid #29202f;
+    transition: 0.3s;
+}
+
+.project img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.project h3 {
+    padding: 18px 20px 5px;
+    font-size: 21px;
+    color: white;
+}
+
+.project p {
+    padding: 0 20px 20px;
+    color: #999;
+    font-size: 14px;
+}
+
+.project:hover {
+    transform: translateY(-6px);
+    border-color: #a855f7;
+}
 
         .project:hover {
             transform: scale(1.02);
@@ -411,10 +430,35 @@
 
         <div class="portfolio">
 
-            <div class="project">PROJECT 01</div>
-            <div class="project">PROJECT 02</div>
-            <div class="project">PROJECT 03</div>
-            <div class="project">PROJECT 04</div>
+            <div class="project">
+    <img src="01-logo-design.png" alt="Logo Design">
+    <h3>Logo Design</h3>
+    <p>Modern Tech Brand — Concept Project</p>
+</div>
+
+<div class="project">
+    <img src="02-social-media-campaign.png" alt="Social Media Campaign">
+    <h3>Social Media Campaign</h3>
+    <p>Restaurant Brand — Concept Project</p>
+</div>
+
+<div class="project">
+    <img src="03-packaging-design.png" alt="Packaging Design">
+    <h3>Packaging Design</h3>
+    <p>Premium Skincare — Concept Project</p>
+</div>
+
+<div class="project">
+    <img src="04-poster-design.png" alt="Poster Design">
+    <h3>Poster Design</h3>
+    <p>Fashion & Event — Concept Project</p>
+</div>
+
+<div class="project">
+    <img src="05-business-card-design.png" alt="Business Card">
+    <h3>Business Card</h3>
+    <p>Creative Agency — Concept Project</p>
+</div>
 
         </div>
 
